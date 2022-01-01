@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaSctipt Calculator | Web Dev Trick</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+
+ <div class="container">
+ <form name="form">
+ <div class="display">
+   
+ <input type="text" placeholder="0" name="displayResult" readonly=""/>
+
+ </div>
+ <div class="buttons">
+ 
+ <div class="row">
+  <input onclick="no1()" type="button" name="b1" value="1"  class="deco">
+ <input onclick="no2()" type="button" name="b2" value="2"  class="deco">
+ <input onclick="no3()" type="button" name="b3" value="3"  class="deco">
+ <input onclick="noi()" type="button" name="mulb" value="*"  class="deco">
+</div>
+
+ <div class="row">
+   <input onclick="no4()" type="button" name="b4" value="4"  class="deco">
+   <input onclick="no5()" type="button" name="b5" value="5"  class="deco">
+   <input onclick="no6()" type="button" name="b6" value="6"  class="deco">
+   <input onclick="nom()" type="button" name="subb" value="-" class="deco">
+ </div>
+
+ <div class="row">
+  <input onclick="no7()" type="button" name="b7" value="7"  class="deco">
+  <input onclick="no8()" type="button" name="b8" value="8"  class="deco">
+  <input onclick="no9()"  type="button" name="b9" value="9"  class="deco">
+  <input onclick="nop()" type="button" name="addb" value="+"  class="deco">
+</div>
+
+ <div class="row">
+   <input onclick="noz()" type="button" name="b0" value="0" class="deco">
+   <input onclick="nodo()"type="button" name="potb" value="." class="deco">
+   <input onclick="nod()" type="button" name="divb" value="/" class="deco">
+   <input onclick="document.form.displayResult.value = eval(form.displayResult.value)" type="button" class="red deco1" value="=">
+ </div>
+
+   <input onclick="noc()" type="button" name="clear" value="c" class="deco">
+
+ </div>
+ 
+ </form>
+ </div>
+
+ <script src="app.js"></script>
+</body>
+ 
+</html>
